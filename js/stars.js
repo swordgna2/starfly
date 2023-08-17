@@ -399,7 +399,9 @@ class Stars {
 
     setInterval() {
         this.interval = setInterval(() => {
-            this.step();
+            window.requestAnimationFrame(() => {
+                this.step();
+            });
         }, this.intervalTimeout);
     }
 
