@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.stars-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-Index: 1;
+}
+
+.stars-form {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+    display: flex;
+}
+
+.stars-form .count, .stars-form .speed, .stars-form .frequency, .stars-form .destroy {
+    padding: 5px;
+}
+
+.stars-form input {
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+}
